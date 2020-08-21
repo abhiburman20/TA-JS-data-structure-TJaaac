@@ -43,7 +43,7 @@ console.log(movies[0].actors);
 // 6. Log the name of the first actor of the first movie
 console.log(movies[0].actors[0]);
 // 7. Log the name of the last actor of the first movie
-console.log(movies[0].actors[movies.length-1]);
+console.log(movies[0].actors[movies[0].genres.length-1]);
 // 8. Log the name of the second actor (index 1) of the first movie
 console.log(movies[0].actors[1]);
 // 9. Log the name of the second actor (index 1) of the second movie
