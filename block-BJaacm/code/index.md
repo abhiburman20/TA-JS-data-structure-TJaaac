@@ -15,21 +15,22 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![name](./hello.png)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true 
+- `user === newUser;` // true
+- `user.name === newUser.name; // true`
+- `user.name == newUser.name;` // true
+- `user.sibling == newUser.sibling;`// true
+- `user.sibling === newUser.sibling;` // true
+- `user.sibling == allBrothers;` // false because it wil create a new address
+- `user.sibling === allBrothers;` // false because it wil create a new address
+- `brothersCopy === allBrothers;` // false both wil have different adress location as 101 & 102
+- `brothersCopy == allBrothers;` // false both wil have different adress location as 101 & 102
+- `brothersCopy == user.sibling;` // true
+- `brothersCopy === user.sibling;` // false both wil have different adress location as 101 & 102
+- `brothersCopy[0] === user.sibling[0];` // false because both may have "rob" as key value but they both are from different address.
+- `brothersCopy[1] === user.sibling[1];` // false because both may have "Ryan" as key value but they both are from different address.
+- `user.sibling[1] === newUser.sibling[1];` // true 
